@@ -1,6 +1,6 @@
 # Rust New Project Template
 
-This is a custom project template for cargo projects, complete with a predefined `.gitignore` and other configurations.
+This is a custom project template for cargo projects, complete with a predefined `.gitignore`, GitHub Action for continuous integration, and other configurations.
 
 ## Usage
 
@@ -18,7 +18,7 @@ cargo generate --git https://github.com/atontini/rust_new_project_template --nam
 ```
 * Replace project-name with the desired name for your new project.
 
-After running this command, cargo-generate will create a new project with the custom .gitignore and other predefined files included.
+After running this command, cargo-generate will create a new project with the custom `.gitignore`, GitHub Action for CI, and other predefined files included.
 
 Example Directory Structure
 Once generated, your project structure will look like this:
@@ -29,5 +29,10 @@ Once generated, your project structure will look like this:
 └── src
     └── main.rs
 ```
+
+### GitHub Actions
+
+This template includes a GitHub Action (`rust.yml`) that automatically compiles the `main` branch after each push, ensuring that your project remains in a buildable state.
+
 
 Contributions are welcome! Please fork the repository, create a new branch, make your changes, and submit a pull request.
